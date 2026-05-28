@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@theme {
+  --animate-slowpan: slowpan alternate 10s ease-in-out infinite;
+
+  @keyframes slowpan {
+    0%{
+      background-position: top left;
+    }
+
+    100% {
+      background-position: bottom right;
+    }
+  }
+}
