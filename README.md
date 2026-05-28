@@ -1,16 +1,116 @@
-# React + Vite
+# 🚀 Learning Tailwind CSS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern React + Tailwind CSS project featuring vibrant space-inspired typography, animations, and minimalist UI design.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Features
 
-## React Compiler
+* 🌌 Space-themed UI
+* 🎨 Gradient and image text effects
+* ⚡ Tailwind CSS v4 utilities
+* 🎥 Smooth custom animations
+* 📱 Fully responsive layout
+* 🧩 Reusable React components
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 📦 Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* React
+* Tailwind CSS v4
+* Vite
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone <your-repo-url>
+```
+
+### 2. Navigate into the project
+
+```bash
+cd <project-folder>
+```
+
+### 3. Install dependencies
+
+```bash
+npm install
+```
+
+### 4. Start development server
+
+```bash
+npm run dev
+```
+
+---
+
+## 📁 Project Structure
+
+```bash
+src/
+│
+├── assets/
+│   └── Space.png
+│
+├── components/
+│   └── Test.jsx
+│
+├── App.jsx
+└── main.jsx
+```
+
+---
+
+## 🎨 Tailwind Custom Animation Example
+
+```css
+@import "tailwindcss";
+
+@theme {
+  --animate-float: float 3s ease-in-out infinite;
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+}
+```
+
+Usage:
+
+```jsx
+<h1 className="animate-float">
+```
+
+---
+
+## 🖼 Background Image Text Effect
+
+```jsx
+<h1
+  className="text-9xl font-bold text-transparent bg-clip-text bg-cover bg-center"
+  style={{
+    backgroundImage: `url(${image})`,
+  }}
+>
+  Exploring the Space
+</h1>
+```
+
+---
+
+## 📸 Preview
+
+Minimal colorful astronomy-inspired design with animated typography.
